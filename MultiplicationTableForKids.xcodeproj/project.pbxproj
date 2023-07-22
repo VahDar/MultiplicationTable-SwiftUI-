@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC09F5212A6BCF65000F93AE /* MultiplyByOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5202A6BCF65000F93AE /* MultiplyByOne.swift */; };
+		FC09F5232A6BD3D2000F93AE /* MultilplyByTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5222A6BD3D2000F93AE /* MultilplyByTwo.swift */; };
+		FC09F5252A6BE289000F93AE /* MultilplyByThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5242A6BE289000F93AE /* MultilplyByThree.swift */; };
+		FC09F5272A6BE2A1000F93AE /* MultilplyByFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5262A6BE2A1000F93AE /* MultilplyByFour.swift */; };
+		FC09F5292A6BE2B3000F93AE /* MultilplyByFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5282A6BE2B3000F93AE /* MultilplyByFive.swift */; };
+		FC09F52B2A6BE2C6000F93AE /* MultilplyBySix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F52A2A6BE2C6000F93AE /* MultilplyBySix.swift */; };
+		FC09F52D2A6BE2D4000F93AE /* MultilplyBySeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F52C2A6BE2D4000F93AE /* MultilplyBySeven.swift */; };
+		FC09F52F2A6BE2F0000F93AE /* MultilplyByEignt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F52E2A6BE2F0000F93AE /* MultilplyByEignt.swift */; };
+		FC09F5322A6BE315000F93AE /* MultilplyByNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5312A6BE314000F93AE /* MultilplyByNine.swift */; };
+		FC09F5342A6BE325000F93AE /* AllInOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5332A6BE325000F93AE /* AllInOne.swift */; };
+		FC09F5362A6C2895000F93AE /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5352A6C2895000F93AE /* AnswerButton.swift */; };
+		FC19303D2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19303C2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift */; };
+		FC19303F2A6817FE00D59552 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19303E2A6817FE00D59552 /* ContentView.swift */; };
+		FC1930412A68180000D59552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1930402A68180000D59552 /* Assets.xcassets */; };
+		FC1930442A68180000D59552 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1930432A68180000D59552 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC09F5202A6BCF65000F93AE /* MultiplyByOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyByOne.swift; sourceTree = "<group>"; };
+		FC09F5222A6BD3D2000F93AE /* MultilplyByTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByTwo.swift; sourceTree = "<group>"; };
+		FC09F5242A6BE289000F93AE /* MultilplyByThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByThree.swift; sourceTree = "<group>"; };
+		FC09F5262A6BE2A1000F93AE /* MultilplyByFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByFour.swift; sourceTree = "<group>"; };
+		FC09F5282A6BE2B3000F93AE /* MultilplyByFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByFive.swift; sourceTree = "<group>"; };
+		FC09F52A2A6BE2C6000F93AE /* MultilplyBySix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyBySix.swift; sourceTree = "<group>"; };
+		FC09F52C2A6BE2D4000F93AE /* MultilplyBySeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyBySeven.swift; sourceTree = "<group>"; };
+		FC09F52E2A6BE2F0000F93AE /* MultilplyByEignt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByEignt.swift; sourceTree = "<group>"; };
+		FC09F5312A6BE314000F93AE /* MultilplyByNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByNine.swift; sourceTree = "<group>"; };
+		FC09F5332A6BE325000F93AE /* AllInOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllInOne.swift; sourceTree = "<group>"; };
+		FC09F5352A6C2895000F93AE /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		FC1930392A6817FE00D59552 /* MultiplicationTableForKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTableForKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC19303C2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTableForKidsApp.swift; sourceTree = "<group>"; };
+		FC19303E2A6817FE00D59552 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC1930402A68180000D59552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC1930432A68180000D59552 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC1930362A6817FE00D59552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC1930302A6817FE00D59552 = {
+			isa = PBXGroup;
+			children = (
+				FC19303B2A6817FE00D59552 /* MultiplicationTableForKids */,
+				FC19303A2A6817FE00D59552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC19303A2A6817FE00D59552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC1930392A6817FE00D59552 /* MultiplicationTableForKids.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC19303B2A6817FE00D59552 /* MultiplicationTableForKids */ = {
+			isa = PBXGroup;
+			children = (
+				FC19303C2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift */,
+				FC19303E2A6817FE00D59552 /* ContentView.swift */,
+				FC09F5332A6BE325000F93AE /* AllInOne.swift */,
+				FC09F5312A6BE314000F93AE /* MultilplyByNine.swift */,
+				FC09F52E2A6BE2F0000F93AE /* MultilplyByEignt.swift */,
+				FC09F52C2A6BE2D4000F93AE /* MultilplyBySeven.swift */,
+				FC09F52A2A6BE2C6000F93AE /* MultilplyBySix.swift */,
+				FC09F5282A6BE2B3000F93AE /* MultilplyByFive.swift */,
+				FC09F5262A6BE2A1000F93AE /* MultilplyByFour.swift */,
+				FC09F5242A6BE289000F93AE /* MultilplyByThree.swift */,
+				FC09F5222A6BD3D2000F93AE /* MultilplyByTwo.swift */,
+				FC09F5202A6BCF65000F93AE /* MultiplyByOne.swift */,
+				FC09F5352A6C2895000F93AE /* AnswerButton.swift */,
+				FC1930402A68180000D59552 /* Assets.xcassets */,
+				FC1930422A68180000D59552 /* Preview Content */,
+			);
+			path = MultiplicationTableForKids;
+			sourceTree = "<group>";
+		};
+		FC1930422A68180000D59552 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC1930432A68180000D59552 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC1930382A6817FE00D59552 /* MultiplicationTableForKids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1930472A68180000D59552 /* Build configuration list for PBXNativeTarget "MultiplicationTableForKids" */;
+			buildPhases = (
+				FC1930352A6817FE00D59552 /* Sources */,
+				FC1930362A6817FE00D59552 /* Frameworks */,
+				FC1930372A6817FE00D59552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiplicationTableForKids;
+			productName = MultiplicationTableForKids;
+			productReference = FC1930392A6817FE00D59552 /* MultiplicationTableForKids.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC1930312A6817FE00D59552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FC1930382A6817FE00D59552 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = FC1930342A6817FE00D59552 /* Build configuration list for PBXProject "MultiplicationTableForKids" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC1930302A6817FE00D59552;
+			productRefGroup = FC19303A2A6817FE00D59552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC1930382A6817FE00D59552 /* MultiplicationTableForKids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC1930372A6817FE00D59552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1930442A68180000D59552 /* Preview Assets.xcassets in Resources */,
+				FC1930412A68180000D59552 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC1930352A6817FE00D59552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC09F5232A6BD3D2000F93AE /* MultilplyByTwo.swift in Sources */,
+				FC09F5292A6BE2B3000F93AE /* MultilplyByFive.swift in Sources */,
+				FC09F52B2A6BE2C6000F93AE /* MultilplyBySix.swift in Sources */,
+				FC09F5362A6C2895000F93AE /* AnswerButton.swift in Sources */,
+				FC09F5272A6BE2A1000F93AE /* MultilplyByFour.swift in Sources */,
+				FC09F5252A6BE289000F93AE /* MultilplyByThree.swift in Sources */,
+				FC09F52D2A6BE2D4000F93AE /* MultilplyBySeven.swift in Sources */,
+				FC19303F2A6817FE00D59552 /* ContentView.swift in Sources */,
+				FC09F52F2A6BE2F0000F93AE /* MultilplyByEignt.swift in Sources */,
+				FC09F5212A6BCF65000F93AE /* MultiplyByOne.swift in Sources */,
+				FC09F5322A6BE315000F93AE /* MultilplyByNine.swift in Sources */,
+				FC19303D2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift in Sources */,
+				FC09F5342A6BE325000F93AE /* AllInOne.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC1930452A68180000D59552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC1930462A68180000D59552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC1930482A68180000D59552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiplicationTableForKids/Preview Content\"";
+				DEVELOPMENT_TEAM = UYW8HNCU5F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.vakhtang.MultiplicationTableForKids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC1930492A68180000D59552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiplicationTableForKids/Preview Content\"";
+				DEVELOPMENT_TEAM = UYW8HNCU5F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.vakhtang.MultiplicationTableForKids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC1930342A6817FE00D59552 /* Build configuration list for PBXProject "MultiplicationTableForKids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1930452A68180000D59552 /* Debug */,
+				FC1930462A68180000D59552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1930472A68180000D59552 /* Build configuration list for PBXNativeTarget "MultiplicationTableForKids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1930482A68180000D59552 /* Debug */,
+				FC1930492A68180000D59552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC1930312A6817FE00D59552 /* Project object */;
+}
