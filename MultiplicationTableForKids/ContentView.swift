@@ -78,7 +78,7 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .font(.system(size: 30, weight: .medium, design: .rounded))
         }
-        .frame(height: 350)
+        .frame(height: 310)
         .frame(maxWidth: .infinity)
         .background(Color.purple)
     }
@@ -152,7 +152,7 @@ struct ItemView: View {
             .frame(width: reader.size.width, height: reader.size.height)
             .background(Color.white)
         }
-        .frame(height: 150)
+        .frame(height: 130)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .shadow(color: Color.black.opacity(0.2), radius: 10, y: 5)
     }
