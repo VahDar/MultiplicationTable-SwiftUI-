@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FC09F5212A6BCF65000F93AE /* MultiplyByOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5202A6BCF65000F93AE /* MultiplyByOne.swift */; };
-		FC09F5232A6BD3D2000F93AE /* MultilplyByTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5222A6BD3D2000F93AE /* MultilplyByTwo.swift */; };
-		FC09F5252A6BE289000F93AE /* MultilplyByThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5242A6BE289000F93AE /* MultilplyByThree.swift */; };
-		FC09F5272A6BE2A1000F93AE /* MultilplyByFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5262A6BE2A1000F93AE /* MultilplyByFour.swift */; };
-		FC09F5292A6BE2B3000F93AE /* MultilplyByFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5282A6BE2B3000F93AE /* MultilplyByFive.swift */; };
-		FC09F52B2A6BE2C6000F93AE /* MultilplyBySix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F52A2A6BE2C6000F93AE /* MultilplyBySix.swift */; };
-		FC09F52D2A6BE2D4000F93AE /* MultilplyBySeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F52C2A6BE2D4000F93AE /* MultilplyBySeven.swift */; };
-		FC09F52F2A6BE2F0000F93AE /* MultilplyByEignt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F52E2A6BE2F0000F93AE /* MultilplyByEignt.swift */; };
-		FC09F5322A6BE315000F93AE /* MultilplyByNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5312A6BE314000F93AE /* MultilplyByNine.swift */; };
 		FC09F5342A6BE325000F93AE /* AllInOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5332A6BE325000F93AE /* AllInOne.swift */; };
 		FC09F5362A6C2895000F93AE /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC09F5352A6C2895000F93AE /* AnswerButton.swift */; };
 		FC19303D2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19303C2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift */; };
@@ -26,14 +18,6 @@
 
 /* Begin PBXFileReference section */
 		FC09F5202A6BCF65000F93AE /* MultiplyByOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyByOne.swift; sourceTree = "<group>"; };
-		FC09F5222A6BD3D2000F93AE /* MultilplyByTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByTwo.swift; sourceTree = "<group>"; };
-		FC09F5242A6BE289000F93AE /* MultilplyByThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByThree.swift; sourceTree = "<group>"; };
-		FC09F5262A6BE2A1000F93AE /* MultilplyByFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByFour.swift; sourceTree = "<group>"; };
-		FC09F5282A6BE2B3000F93AE /* MultilplyByFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByFive.swift; sourceTree = "<group>"; };
-		FC09F52A2A6BE2C6000F93AE /* MultilplyBySix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyBySix.swift; sourceTree = "<group>"; };
-		FC09F52C2A6BE2D4000F93AE /* MultilplyBySeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyBySeven.swift; sourceTree = "<group>"; };
-		FC09F52E2A6BE2F0000F93AE /* MultilplyByEignt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByEignt.swift; sourceTree = "<group>"; };
-		FC09F5312A6BE314000F93AE /* MultilplyByNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilplyByNine.swift; sourceTree = "<group>"; };
 		FC09F5332A6BE325000F93AE /* AllInOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllInOne.swift; sourceTree = "<group>"; };
 		FC09F5352A6C2895000F93AE /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		FC1930392A6817FE00D59552 /* MultiplicationTableForKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTableForKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,14 +60,6 @@
 				FC19303C2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift */,
 				FC19303E2A6817FE00D59552 /* ContentView.swift */,
 				FC09F5332A6BE325000F93AE /* AllInOne.swift */,
-				FC09F5312A6BE314000F93AE /* MultilplyByNine.swift */,
-				FC09F52E2A6BE2F0000F93AE /* MultilplyByEignt.swift */,
-				FC09F52C2A6BE2D4000F93AE /* MultilplyBySeven.swift */,
-				FC09F52A2A6BE2C6000F93AE /* MultilplyBySix.swift */,
-				FC09F5282A6BE2B3000F93AE /* MultilplyByFive.swift */,
-				FC09F5262A6BE2A1000F93AE /* MultilplyByFour.swift */,
-				FC09F5242A6BE289000F93AE /* MultilplyByThree.swift */,
-				FC09F5222A6BD3D2000F93AE /* MultilplyByTwo.swift */,
 				FC09F5202A6BCF65000F93AE /* MultiplyByOne.swift */,
 				FC09F5352A6C2895000F93AE /* AnswerButton.swift */,
 				FC1930402A68180000D59552 /* Assets.xcassets */,
@@ -170,17 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC09F5232A6BD3D2000F93AE /* MultilplyByTwo.swift in Sources */,
-				FC09F5292A6BE2B3000F93AE /* MultilplyByFive.swift in Sources */,
-				FC09F52B2A6BE2C6000F93AE /* MultilplyBySix.swift in Sources */,
 				FC09F5362A6C2895000F93AE /* AnswerButton.swift in Sources */,
-				FC09F5272A6BE2A1000F93AE /* MultilplyByFour.swift in Sources */,
-				FC09F5252A6BE289000F93AE /* MultilplyByThree.swift in Sources */,
-				FC09F52D2A6BE2D4000F93AE /* MultilplyBySeven.swift in Sources */,
 				FC19303F2A6817FE00D59552 /* ContentView.swift in Sources */,
-				FC09F52F2A6BE2F0000F93AE /* MultilplyByEignt.swift in Sources */,
 				FC09F5212A6BCF65000F93AE /* MultiplyByOne.swift in Sources */,
-				FC09F5322A6BE315000F93AE /* MultilplyByNine.swift in Sources */,
 				FC19303D2A6817FE00D59552 /* MultiplicationTableForKidsApp.swift in Sources */,
 				FC09F5342A6BE325000F93AE /* AllInOne.swift in Sources */,
 			);

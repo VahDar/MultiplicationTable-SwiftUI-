@@ -11,30 +11,36 @@ struct MultiplyByOne: View {
     
     
     @State private var choiceArray = [0, 1, 2, 3]
-    @State private var animationStates = [false, false, false, false]
-    @State private var answers: Int?
     @State private var secondNumber = Int.random(in: 2...20)
-    @State private var multiplyNumber = 1
+    var multiplyNumber: Int
+    @State private var correctAnswer = Int.random(in: 0...3)
     @State private var score = 0
     @State private var enabled = 0.0
+    @State private var animationAmount = 1.0
+    @State private var selectedAnswer: Int?
+    @State private var answers: Int?
+    @State private var animationStates = [false, false, false, false]
     @State private var isCorrectAnswer = false
     @State private var isCorrect = false
     @State private var correctAnswerShowing = false
     @State private var showCorrectAnswer = false
-    @State private var correctAnswer = Int.random(in: 0...3)
     @State private var isGameStarted = false
-    @State private var selectedAnswer: Int?
-    @State private var animationAmount = 1.0
     
     var body: some View {
         
         ZStack {
-            LinearGradient(stops: [
-                Gradient.Stop(color: Color(UIColor.orange), location: 0),
-                Gradient.Stop(color: Color(UIColor.red), location: 0.17),
-                Gradient.Stop(color: Color(UIColor.yellow), location: 0.75),
-                Gradient.Stop(color: Color(UIColor.orange), location: 1),
-            ], startPoint: .top, endPoint: .bottom)
+            //            LinearGradient(stops: [
+            //                Gradient.Stop(color: Color(UIColor.orange), location: 0),
+            //                Gradient.Stop(color: Color(UIColor.red), location: 0.17),
+            //                Gradient.Stop(color: Color(UIColor.yellow), location: 0.75),
+            //                Gradient.Stop(color: Color(UIColor.orange), location: 1),
+            //            ]
+            LinearGradient(gradient: Gradient(colors: [
+                Color(red: 255/255, green: 90/255, blue: 135/255), // Pink
+                Color(red: 255/255, green: 202/255, blue: 58/255), // Yellow
+                Color(red: 69/255, green: 218/255, blue: 230/255), // Cyan
+                Color(red: 255/255, green: 90/255, blue: 135/255), // Pink (same as the first color for seamless loop)
+            ]), startPoint: .top, endPoint: .bottom)
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
@@ -76,7 +82,7 @@ struct MultiplyByOne: View {
                                             .font(.system(size: 20))
                                             .fontWeight(.bold)
                                             .foregroundColor(Color(UIColor.green))
-
+                                        
                                     }
                                 })
                                 .opacity(showCorrectAnswer ? 0 : 1)
@@ -93,16 +99,19 @@ struct MultiplyByOne: View {
                         isGameStarted = true
                         generateAnswers()
                     }
-                    .padding(50)
                     .frame(width: 200, height: 80)
-                    .background(.yellow)
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
+                    .background(
+                        LinearGradient(gradient: Gradient(colors: [
+                            Color(red: 255/255, green: 90/255, blue: 135/255), // Pink
+                            Color(red: 255/255, green: 202/255, blue: 58/255), // Yellow
+                            Color(red: 69/255, green: 218/255, blue: 230/255), // Cyan
+                            Color(red: 255/255, green: 90/255, blue: 135/255), // Pink (same as the first color for seamless loop)
+                        ]), startPoint: .top, endPoint: .bottom)
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                    )
                     .overlay(
                         RoundedRectangle(cornerRadius: 25)
-                            .stroke(.red)
+                            .stroke(Color(red: 255/255, green: 90/255, blue: 135/255), lineWidth: 4) // Pink border
                             .scaleEffect(animationAmount)
                             .opacity(2 - animationAmount)
                             .animation(
@@ -114,8 +123,35 @@ struct MultiplyByOne: View {
                     .onAppear{
                         animationAmount = 3
                     }
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
+                    //                    Button("Start") {
+                    //                        isGameStarted = true
+                    //                        generateAnswers()
+                    //                    }
+                    //                    .frame(width: 200, height: 80)
+                    //                    .background(.yellow)
+                    //                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                    //                    .overlay(
+                    //                        RoundedRectangle(cornerRadius: 25)
+                    //                            .stroke(.red)
+                    //                            .scaleEffect(animationAmount)
+                    //                            .opacity(2 - animationAmount)
+                    //                            .animation(
+                    //                                .easeInOut(duration: 1)
+                    //                                .repeatForever(autoreverses: false),
+                    //                                value: animationAmount
+                    //                            )
+                    //                    )
+                    //                    .onAppear{
+                    //                        animationAmount = 3
+                    //                    }
+                    //                    .foregroundColor(.white)
+                    //                    .font(.largeTitle)
+                    //                    .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
+                    Spacer()
                 }
-                Spacer()
             }
             if correctAnswerShowing {
                 if showCorrectAnswer {
@@ -145,18 +181,19 @@ struct MultiplyByOne: View {
                 }
             }
         }
+        
     }
     
     
     func generateAnswers() {
         
-        multiplyNumber = 1
+        let multiplyNumbers = multiplyNumber
         secondNumber = Int.random(in: 1...20)
         var answerList = [Int]()
         
-        correctAnswer = multiplyNumber * secondNumber
+        correctAnswer = multiplyNumbers * secondNumber
         for _ in 0...2 {
-            answerList.append(Int.random(in: 1...20))
+            answerList.append(Int.random(in: 1...180))
         }
         answerList.append(correctAnswer)
         choiceArray = answerList.shuffled()
@@ -181,7 +218,7 @@ struct MultiplyByOne: View {
         } else {
             score -= 1
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-            showCorrectAnswer = true
+                showCorrectAnswer = true
             }
         }
     }
@@ -189,6 +226,6 @@ struct MultiplyByOne: View {
 
 struct MultiplyByOne_Previews: PreviewProvider {
     static var previews: some View {
-        MultiplyByOne()
+        MultiplyByOne(multiplyNumber: 1)
     }
 }
