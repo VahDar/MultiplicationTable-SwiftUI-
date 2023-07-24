@@ -26,44 +26,35 @@ struct MultiplyByOne: View {
     @State private var showCorrectAnswer = false
     @State private var isGameStarted = false
     
+    
     var body: some View {
         
         ZStack {
-            //            LinearGradient(stops: [
-            //                Gradient.Stop(color: Color(UIColor.orange), location: 0),
-            //                Gradient.Stop(color: Color(UIColor.red), location: 0.17),
-            //                Gradient.Stop(color: Color(UIColor.yellow), location: 0.75),
-            //                Gradient.Stop(color: Color(UIColor.orange), location: 1),
-            //            ]
             LinearGradient(gradient: Gradient(colors: [
-                Color(red: 255/255, green: 90/255, blue: 135/255), // Pink
-                Color(red: 255/255, green: 202/255, blue: 58/255), // Yellow
-                Color(red: 69/255, green: 218/255, blue: 230/255), // Cyan
-                Color(red: 255/255, green: 90/255, blue: 135/255), // Pink (same as the first color for seamless loop)
+                Color(red: 255/255, green: 255/255, blue: 153/255), // Yellow
+                Color(red: 204/255, green: 255/255, blue: 204/255), // Light Green
+                Color(red: 153/255, green: 204/255, blue: 255/255), // Sky Blue
+                Color(red: 255/255, green: 204/255, blue: 153/255), // Orange
             ]), startPoint: .top, endPoint: .bottom)
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
-                Button("Back") {
-                    presentationMode.wrappedValue.dismiss()
+                HStack {
+                    Button("Back") {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                    .frame(width: 60, height: 30)
+                    .foregroundColor(Color.white)
+                    .background(
+                        Color(red: 135/255, green: 206/255, blue: 235/255))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .padding(.leading, 16)
+                    .padding(.top, 16)
+                    Spacer()
                 }
-                .frame(width: 60, height: 30)
-                .foregroundColor(Color.white)
-                .background(
-                    LinearGradient(gradient: Gradient(colors: [
-                        Color(red: 255/255, green: 90/255, blue: 135/255),
-                        Color(red: 255/255, green: 202/255, blue: 58/255),
-                        Color(red: 69/255, green: 218/255, blue: 230/255),
-                        Color(red: 255/255, green: 90/255, blue: 135/255),
-                    ]), startPoint: .top, endPoint: .bottom)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    )
-                .padding(.leading, -160)
-                .padding(.top, 2)
-                
                 if isGameStarted {
                     Text("\(multiplyNumber) x \(secondNumber)")
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.black)
                         .font(.largeTitle.weight(.semibold))
                     Spacer()
                     if isCorrect {
@@ -93,10 +84,11 @@ struct MultiplyByOne: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 25))
                                 .scaleEffect(index != answers && isCorrectAnswer ? 0.8 : 1.0)
                                 .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
+                                .opacity(index == answers && isCorrectAnswer ? 0 : 1)
                                 .overlay(content: {
                                     if index == answers && isCorrectAnswer {
                                         Text("+ 1 score")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 35))
                                             .fontWeight(.bold)
                                             .foregroundColor(Color(UIColor.green))
                                         

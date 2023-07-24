@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AllInOne: View {
    
+    @Environment(\.presentationMode) var presentationMode
     @State private var choiceArray = [0, 1, 2, 3]
     @State private var animationStates = [false, false, false, false]
     @State private var answers: Int?
@@ -28,18 +29,31 @@ struct AllInOne: View {
     var body: some View {
         
         ZStack {
-            LinearGradient(stops: [
-                Gradient.Stop(color: Color(UIColor.orange), location: 0),
-                Gradient.Stop(color: Color(UIColor.red), location: 0.17),
-                Gradient.Stop(color: Color(UIColor.yellow), location: 0.75),
-                Gradient.Stop(color: Color(UIColor.orange), location: 1),
-            ], startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [
+                Color(red: 255/255, green: 255/255, blue: 153/255), // Yellow
+                Color(red: 204/255, green: 255/255, blue: 204/255), // Light Green
+                Color(red: 153/255, green: 204/255, blue: 255/255), // Sky Blue
+                Color(red: 255/255, green: 204/255, blue: 153/255), // Orange
+            ]), startPoint: .top, endPoint: .bottom)
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
+                HStack {
+                    Button("Back") {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                    .frame(width: 60, height: 30)
+                    .foregroundColor(Color.white)
+                    .background(
+                        Color(red: 135/255, green: 206/255, blue: 235/255))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .padding(.leading, 16)
+                    .padding(.top, 16)
+                    Spacer()
+                }
                 if isGameStarted {
                     Text("\(multiplyNumber) x \(secondNumber)")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(.largeTitle.weight(.semibold))
                     Spacer()
                     if isCorrect {
@@ -69,10 +83,11 @@ struct AllInOne: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 25))
                                 .scaleEffect(index != answers && isCorrectAnswer ? 0.8 : 1.0)
                                 .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
+                                .opacity(index == answers && isCorrectAnswer ? 0 : 1)
                                 .overlay(content: {
                                     if index == answers && isCorrectAnswer {
                                         Text("+ 1 score")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 35))
                                             .fontWeight(.bold)
                                             .foregroundColor(Color(UIColor.green))
 
@@ -94,7 +109,7 @@ struct AllInOne: View {
                     }
                     .padding(50)
                     .frame(width: 200, height: 80)
-                    .background(.yellow)
+                    .background(Color(red: 135/255, green: 206/255, blue: 235/255))
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .clipShape(RoundedRectangle(cornerRadius: 25))

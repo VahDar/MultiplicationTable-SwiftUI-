@@ -12,7 +12,7 @@ struct AnswerButton: View {
     var body: some View {
         Text("\(number)")
             .frame(width: 200, height: 80)
-            .background(.yellow)
+            .background(Color(red: 135/255, green: 206/255, blue: 235/255))
             .clipShape(RoundedRectangle(cornerRadius: 25))
             .foregroundColor(.white)
             .font(.largeTitle)
