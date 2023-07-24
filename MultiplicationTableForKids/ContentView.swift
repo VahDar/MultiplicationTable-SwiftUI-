@@ -44,7 +44,7 @@ struct ContentView: View {
                         headerView
                         LazyVGrid(columns: columns, spacing:  spacing) {
                             ForEach(items) { item in
-                                NavigationLink(destination: MultiplyByOne(multiplyNumber: item.multiplyNumber).navigationBarBackButtonHidden(true)) {
+                                NavigationLink(destination: MultiplyByOne(multiplyNumber: item.multiplyNumber).navigationBarHidden(true)) {
                                     ItemView(item: item)
                                 }
                                 .buttonStyle(ItemButtonStyle(cornerRudius: 20))

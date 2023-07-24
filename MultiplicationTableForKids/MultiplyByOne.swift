@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MultiplyByOne: View {
     
-    
+    @Environment(\.presentationMode) var presentationMode
     @State private var choiceArray = [0, 1, 2, 3]
     @State private var secondNumber = Int.random(in: 2...20)
     var multiplyNumber: Int
@@ -44,6 +44,23 @@ struct MultiplyByOne: View {
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
+                Button("Back") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+                .frame(width: 60, height: 30)
+                .foregroundColor(Color.white)
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [
+                        Color(red: 255/255, green: 90/255, blue: 135/255),
+                        Color(red: 255/255, green: 202/255, blue: 58/255),
+                        Color(red: 69/255, green: 218/255, blue: 230/255),
+                        Color(red: 255/255, green: 90/255, blue: 135/255),
+                    ]), startPoint: .top, endPoint: .bottom)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    )
+                .padding(.leading, -160)
+                .padding(.top, 2)
+                
                 if isGameStarted {
                     Text("\(multiplyNumber) x \(secondNumber)")
                         .foregroundColor(.white)
@@ -126,30 +143,6 @@ struct MultiplyByOne: View {
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
-                    //                    Button("Start") {
-                    //                        isGameStarted = true
-                    //                        generateAnswers()
-                    //                    }
-                    //                    .frame(width: 200, height: 80)
-                    //                    .background(.yellow)
-                    //                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                    //                    .overlay(
-                    //                        RoundedRectangle(cornerRadius: 25)
-                    //                            .stroke(.red)
-                    //                            .scaleEffect(animationAmount)
-                    //                            .opacity(2 - animationAmount)
-                    //                            .animation(
-                    //                                .easeInOut(duration: 1)
-                    //                                .repeatForever(autoreverses: false),
-                    //                                value: animationAmount
-                    //                            )
-                    //                    )
-                    //                    .onAppear{
-                    //                        animationAmount = 3
-                    //                    }
-                    //                    .foregroundColor(.white)
-                    //                    .font(.largeTitle)
-                    //                    .shadow(color: Color.black.opacity(0.6), radius: 10, y: 5)
                     Spacer()
                 }
             }
