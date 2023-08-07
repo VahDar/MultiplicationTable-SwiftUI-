@@ -1,10 +1,8 @@
 # Multiplication table for children
 ---
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-07 at 19 46 07](https://github.com/VahDar/MultiplicationTable-SwiftUI-/assets/118889967/0da77700-38cb-44a5-8c25-d1aacecf1996)
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-07 at 21 07 48](https://github.com/VahDar/MultiplicationTable-SwiftUI-/assets/118889967/2b9c5403-1530-4bea-98f2-983e0d2c975f)
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-07 at 21 11 57](https://github.com/VahDar/MultiplicationTable-SwiftUI-/assets/118889967/9960ff1c-6e9d-4b2b-9404-810a03be2bd8)
-
-
+<img src="https://github.com/VahDar/MultiplicationTable-SwiftUI-/assets/118889967/0da77700-38cb-44a5-8c25-d1aacecf1996" width="200" height="450"> 
+<img src="https://github.com/VahDar/MultiplicationTable-SwiftUI-/assets/118889967/2b9c5403-1530-4bea-98f2-983e0d2c975f" width="200" height="450">
+<img src="https://github.com/VahDar/MultiplicationTable-SwiftUI-/assets/118889967/9960ff1c-6e9d-4b2b-9404-810a03be2bd8" width="200" height="450"> 
 
 ---
 
